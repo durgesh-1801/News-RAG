@@ -1,4 +1,0 @@
-pathway
-requests
-python-dotenv
-google-generativeai

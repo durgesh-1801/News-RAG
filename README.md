@@ -81,18 +81,25 @@ git clone <your-repo-url>
 cd data_quest
 ```
 Create & activate virtual environment
+```bash
 python -m venv pathway-env
 source pathway-env/bin/activate
+```
 Install dependencies
+```
 pip install -r requirements.txt
+```
 Environment Variables
 
 Create a .env file in the project root:
+```
 NEWS_API_KEY=your_newsapi_key_here
+```
 Step 1: Run News Ingestion
 This script continuously fetches live news and stores them locally.
+```
 python backend/ingestion/news_writer.py
-
+```
 What this does:
 
 
@@ -111,8 +118,9 @@ CTRL + C
 
 🔍 Step 2: Run FAISS Semantic Search
 Once news is collected, run:
+```
 python test_faiss.py
-
+```
 You will see:
 [FAISS] Loaded XX documents
 [FAISS] Indexed XX documents
